@@ -1,0 +1,20 @@
+﻿<Window x:Class="LicensePlateRecognitionExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal" Height="24" VerticalAlignment="Top" Margin="0,5">
+                <TextBox Name="fileNameTextBox" Width="150" Margin="0,0,5,0"></TextBox>
+                <Button Width="100" Content="Procházet" Click="Button_Click_1"></Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left">
+                <Button Width="90" Name="DetectButton" Content="Detekovat" Click="Button_Click_2" IsEnabled="False" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="SPZ: "/>
+                <Label Name="LpTextLabel" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
